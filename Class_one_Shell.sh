@@ -162,8 +162,61 @@ command1 | command2
 
 
 :<<!
-13. if   if..else   if..elif..else
+13. if   if..else   if..elif..else   if和elif后都要接then
 !
+var_14="abc"
+var_15="abc"
+if [ $var_14 == $var_15 ]
+then
+	echo "var_14和var_15相等"
+else
+	echo "var_14和var_15不等"
+fi
+echo " "
+
+
+
+:<<!
+14. case in 语句
+!
+read -p "Please input integer number：" integer_number
+
+case ${integer_number} in
+	1)
+		echo "Monday"
+		;;
+	2)
+		echo "Tuesday"
+		;;
+	3)
+		echo "Wednesday"
+		;;
+	4)
+		echo "Thursday"
+		;;
+	5)
+		echo "Friday"
+		;;
+	6)
+		echo "Saturday"
+		;;
+	7)
+		echo "Sunday"
+		;;
+	*)
+		echo "Show me default"
+		;;
+esac
+echo " "
+
+
+
+:<<!
+15. for in 循环
+!
+
+
+
 
 
 
